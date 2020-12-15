@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+.markdown {
+  @apply text-lg text-gray-800 leading-normal;
+  & > * + *,
+  & li > p + p {
+    @apply mt-6;
+  }
+  & li + li {
+    @apply mt-2;
+  }
+  & strong {
+    @apply text-black font-bold;
+  }
+  & a {
+    @apply text-black text-blue-800;
+  }
+  & a:hover {
+    @apply bg-blue-200;
+  }
+  & strong a {
+    @apply font-bold;
+  }
+  & h1 {
+    @apply leading-tight text-4xl font-semibold text-black mb-2 mt-10;
+  }
+  & h2 {
+    @apply leading-tight text-2xl font-semibold text-black mb-2 mt-10;
+  }
+  & h3 {
+    @apply leading-tight text-xl font-semibold text-black mt-8 -mb-2;
+  }
+  & code {
+    @apply font-mono text-sm inline bg-gray-200 px-1;
+  }
+  & img {
+    @apply float-right md:float-none m-2 rounded-lg;
+  }
+  & pre code {
+    @apply block text-gray-100 bg-black p-4 rounded;
+  }
+  & blockquote {
+    @apply border-l-4 border-gray-200 pl-4 italic;
+  }
+  & ul,
+  & ol {
+    @apply list-outside list-disc;
+
+    & li {
+      @apply ml-6 pl-2;
+    }
+  }
+}
+@tailwind utilities;
+
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1; /* Or flex-grow: 1;*/
+}

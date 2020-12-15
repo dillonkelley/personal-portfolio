@@ -1,0 +1,5 @@
+{
+    "layout": "layouts/blogPost.hbs",
+    "tags": "post"
+
+}

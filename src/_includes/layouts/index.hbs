@@ -1,19 +1,37 @@
 ---
 layout: layouts/base.hbs
 ---
-<div class="sm:flex  sm:justify-between ">
+<div class="flex sm:items-center sm:h-screen my-36 sm:m-0">
 
-    <div class="justify-around">
-        <p class="sm:text-2xl items-center flex-wrap my-3 md:my-24 w-4/5">
-            <span class="text-2 xl sm:text-4xl font-bold">My name is
-                Dillon. </span>I'm a
+    <div class="">
+
+
+
+        <p class="text-3xl sm:text-6xl font-normal">My name is
+            <span class="">Dillon.</span>
+        </p>
+        <p class="sm:text-4xl text-2xl items-start flex-wrap my-3 w-full rounded-lg font-thin tracking-wider leading-relaxed py-4"
+            id="splash">
+            I'm a
             developer based
             out of Chicago, Illinois. I create
-            websites and web apps using modern technology that's mobile friendly. Recently, I've been interested in JAM
-            Stack tools for building sites. Check out <a class="font-bold" href="/portfolio">my projects</a>
+            websites and web apps using modern tech that's mobile friendly. I am confident working with <span
+                class="font-normal">javascript
+                and react</span>. Recently, I've been interested in JAM
+            Stack tools for building sites and am learning Ruby/Rails. Check out <a class="font-medium"
+                href="/portfolio">my
+                projects.</a>
         </p>
+        <p class="text-right text-2xl font-thin border-t-2 mt-4 pt-4">For those interested, here's <a href="/resume"
+                class="font-medium" target="_blank">my
+                resume</a></p>
+        <p class="text-right text-2xl font-thin pb-4">For those interested in my <a href="/contact" class="font-medium"
+                target="_blank">freelance</a> services</p>
+
+        {{!-- <img
+            src="https://res.cloudinary.com/dilldog-industries/image/upload/ar_3.2,c_crop/v1608086468/dills-corner/dog-dill_nw2p91.jpg"
+            alt="dillon kelley eats ice cream" /> --}}
     </div>
-    <img class="rounded-lg md:w-1/2 sm:object-contain opacity-70" src="/imgs/chicago-dillon.jpg" alt="dillon kelley" />
 
 </div>
 {{{content}}}

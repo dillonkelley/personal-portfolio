@@ -3,17 +3,16 @@ layout: layouts/base.hbs
 title: Blog
 ---
 
-
-<h1> {{title}} </h1>
+<h1>{{title}}</h1>
 
     {%- for post in collections.post -%}
     <div class="my-2 h-1/5 w-full">
 
     <a href="{{post.url}}">
-    <div class="sm:w-1/3 bg-indigo-200 mb-5 h-90 my-6">
+
+        <div class="sm:w-1/3 hover:bg-indigo-100 mb-5 h-90 my-6">
     <h2 class="">{{ post.data.title }}</h2>
-   
-    <script>`{{post.templateContent}}`.split(' ').slice(0, 20).join('')</script>
+    <p>{{post.data.date | date: "%b %d, %y"}}</p>
     </a>
     </div>
     {%- endfor -%}

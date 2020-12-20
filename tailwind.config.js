@@ -4,12 +4,7 @@ module.exports = {
   purge: [],
   theme: {
     extends: {
-      colors: {
-        brand: {
-          light: "#b49c73",
-          dark: "#565d47",
-        },
-      },
+      colors: {},
     },
   },
   variants: {},

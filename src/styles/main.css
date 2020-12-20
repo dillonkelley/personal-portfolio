@@ -13,7 +13,7 @@
     @apply text-black font-bold;
   }
   & a {
-    @apply text-black text-blue-800;
+    @apply text-black text-yellow-600;
   }
   & a:hover {
     @apply bg-blue-200;
@@ -61,4 +61,33 @@ body {
 
 main {
   flex: 1; /* Or flex-grow: 1;*/
+}
+#body {
+  background: #fcf8ec;
+}
+
+#project-cards {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#splash {
+  color: #000;
+}
+#pages {
+  color: #222;
+  padding: 2rem;
+}
+@media screen and (max-width: 640px) {
+  #projects {
+    display: flex;
+    flex-flow: column;
+  }
+  #project-photo {
+    order: 1;
+  }
+  #project-decription {
+    order: 2;
+  }
 }

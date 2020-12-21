@@ -1,6 +1,5 @@
 module.exports = function (eleventyConfig) {
   // Copy the `imgs/` directory
-  eleventyConfig.addPassthroughCopy("imgs");
   eleventyConfig.setFrontMatterParsingOptions({ excerpt: true });
   eleventyConfig.addPassthroughCopy("src/favicon.ico");
 

@@ -14,9 +14,7 @@ module.exports = {
     filename: "main.js",
   },
   plugins: [
-    new MiniCssExtractPlugin({
-      filename: "[name].css",
-    }),
+    new MiniCssExtractPlugin(),
     new PurgecssPlugin({
       paths: glob.sync(`${PATHS.src}/**/*`, { nodir: true }),
     }),
